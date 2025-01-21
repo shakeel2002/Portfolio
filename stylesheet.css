@@ -187,13 +187,11 @@ section {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background: linear-gradient(45deg, #3498db, #8e44ad); /* Gradient from blue to purple */
-    color: #fff;
     padding: 50px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    background-color: #222; /* Dark background for contrast */
+    border-radius: 12px; /* Slight rounding of the container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
 }
-
 
 .about-text {
     max-width: 800px;
@@ -201,11 +199,10 @@ section {
 }
 
 .about-text h2 {
-    font-size: 40px; /* Larger font for the title */
-    margin-bottom: 20px;
-    color: #fff; /* Light color for the heading */
-    font-weight: 700; /* Bold heading */
-    letter-spacing: 1px; /* Slight spacing for better readability */
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 700; /* Bold heading for emphasis */
 }
 
 .about-text h2 span {
@@ -216,59 +213,41 @@ section {
     font-size: 24px;
     font-weight: 600;
     color: #fff;
-    margin: 20px 0;
+    margin: 15px 0;
     line-height: 1.7;
-    opacity: 0.8; /* Slight transparency for contrast */
 }
 
 .about-text p {
-    color: #dcdcdc; /* Light grey text */
+    color: aliceblue;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
-    max-width: 700px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.about-text ul {
-    list-style-type: none;
-    padding: 0;
-    color: #dcdcdc;
-    font-size: 18px;
-}
-
-.about-text ul li {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.about-text ul li strong {
-    font-weight: bold;
-    color: #0ef;
 }
 
 .about .btn-box {
     display: inline-block;
     background-color: #0ef;
     color: #222;
-    padding: 12px 30px;
+    padding: 12px 25px;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 40px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
     margin-top: 20px;
 }
 
 .about .btn-box:hover {
-    background-color: #0056b3; /* Darker shade for hover */
-    box-shadow: 0 0 15px rgba(0, 239, 255, 0.6);
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scaling effect on hover */
 }
 
 @media screen and (max-width: 768px) {
     .about-text h2 {
-        font-size: 32px; /* Smaller font for mobile */
+        font-size: 28px;
     }
 
     .about-text h4 {
