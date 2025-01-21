@@ -187,11 +187,13 @@ section {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    background: linear-gradient(45deg, #3498db, #8e44ad); /* Gradient from blue to purple */
+    color: #fff;
     padding: 50px 20px;
-    background-color: #222; /* Dark background for contrast */
-    border-radius: 8px; /* Slight round corners */
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
+
 
 .about-text {
     max-width: 800px;
