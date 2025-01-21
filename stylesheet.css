@@ -180,45 +180,130 @@ section {
     0 0 100px cyan;
 }
     
-/* About Section with Flexbox Layout */
+/* About Section */
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px 20px;
+    padding: 80px 10%; /* Adjusted padding */
+    background-color: #081b29; /* Dark background for contrast */
+    color: #ededed; /* Light text color */
+}
+
+.about h2 {
+    font-size: 36px; /* Similar font size to education and experience sections */
+    font-weight: 700; /* Bold font */
+    margin-bottom: 40px; /* Space below the heading */
 }
 
 .about-text {
     max-width: 800px;
     padding: 0 20px;
+    border: 2px solid #0ef; /* Border similar to other sections */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 40px; /* Space below each item */
 }
 
 .about-text h2 {
-    font-size: 42px; /* Slightly larger font size for a more impactful header */
-    margin-bottom: 15px; /* Slightly increased margin to give more space below the header */
-    font-weight: 700; /* Ensure the heading stands out */
-    letter-spacing: 1px; /* Added spacing between letters for improved readability */
-}
-
-.about-text h2 span {
-    color: #0ef; /* Bright color for the span text */
+    font-size: 24px; /* Adjusted size for subheading */
+    font-weight: 600; /* Slightly lighter weight */
+    margin-bottom: 10px;
 }
 
 .about-text h4 {
-    font-size: 26px; /* Larger font for subheading */
+    font-size: 20px; /* Subheading font size */
     font-weight: 600;
-    color: #fff;
-    margin: 20px 0; /* Slightly more space above and below the subheading */
-    line-height: 1.6; /* Adjust line height for better readability */
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .about-text p {
-    color: aliceblue;
-    font-size: 20px; /* Slightly larger text for better readability */
-    line-height: 1.7; /* Increased line height for comfort */
+    font-size: 18px; /* Paragraph font size */
+    line-height: 1.5;
     margin-bottom: 30px;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.about-text ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Secondary Box for Additional Info or Notes */
+.secondary-box {
+    border: 1px solid #0ef; /* Border with the same color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #081b29; /* Dark background */
+    color: #ededed; /* Light text */
+    font-size: 16px; /* Font size for the secondary box content */
+}
+
+.secondary-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Button Style for About Section */
+.about .btn-box {
+    display: inline-block;
+    background-color: #0ef;
+    color: #222;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.about .btn-box:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Media Queries for About Section */
+@media screen and (max-width: 768px) {
+    .about h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about-text {
+        margin-bottom: 30px;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .about-text h4 {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .about-text ul li {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .about .btn-box {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .secondary-box {
+        font-size: 14px; /* Adjusted for mobile */
+        padding: 8px; /* Reduced padding for mobile */
+    }
 }
 
 
