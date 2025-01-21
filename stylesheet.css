@@ -189,6 +189,8 @@ section {
     text-align: center;
     padding: 50px 20px;
     background-color: #222; /* Dark background for contrast */
+    border-radius: 8px; /* Slight round corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 .about-text {
@@ -197,9 +199,11 @@ section {
 }
 
 .about-text h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 40px; /* Larger font for the title */
+    margin-bottom: 20px;
     color: #fff; /* Light color for the heading */
+    font-weight: 700; /* Bold heading */
+    letter-spacing: 1px; /* Slight spacing for better readability */
 }
 
 .about-text h2 span {
@@ -210,26 +214,29 @@ section {
     font-size: 24px;
     font-weight: 600;
     color: #fff;
-    margin: 15px 0;
+    margin: 20px 0;
     line-height: 1.7;
+    opacity: 0.8; /* Slight transparency for contrast */
 }
 
 .about-text p {
-    color: aliceblue;
+    color: #dcdcdc; /* Light grey text */
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-text ul {
     list-style-type: none;
     padding: 0;
-    color: aliceblue;
+    color: #dcdcdc;
+    font-size: 18px;
 }
 
 .about-text ul li {
-    font-size: 18px;
-    line-height: 1.7;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -243,21 +250,23 @@ section {
     display: inline-block;
     background-color: #0ef;
     color: #222;
-    padding: 10px 20px;
+    padding: 12px 30px;
     font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 40px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     margin-top: 20px;
 }
 
 .about .btn-box:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker shade for hover */
+    box-shadow: 0 0 15px rgba(0, 239, 255, 0.6);
 }
 
 @media screen and (max-width: 768px) {
     .about-text h2 {
-        font-size: 28px;
+        font-size: 32px; /* Smaller font for mobile */
     }
 
     .about-text h4 {
