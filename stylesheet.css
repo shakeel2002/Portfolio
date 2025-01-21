@@ -188,8 +188,6 @@ section {
     flex-direction: column;
     text-align: center;
     padding: 50px 20px;
-    border-radius: 12px; /* Slight rounding of the container */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
 }
 
 .about-text {
@@ -198,10 +196,10 @@ section {
 }
 
 .about-text h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #fff;
-    font-weight: 700; /* Bold heading for emphasis */
+    font-size: 42px; /* Slightly larger font size for a more impactful header */
+    margin-bottom: 15px; /* Slightly increased margin to give more space below the header */
+    font-weight: 700; /* Ensure the heading stands out */
+    letter-spacing: 1px; /* Added spacing between letters for improved readability */
 }
 
 .about-text h2 span {
@@ -209,58 +207,20 @@ section {
 }
 
 .about-text h4 {
-    font-size: 24px;
+    font-size: 26px; /* Larger font for subheading */
     font-weight: 600;
     color: #fff;
-    margin: 15px 0;
-    line-height: 1.7;
+    margin: 20px 0; /* Slightly more space above and below the subheading */
+    line-height: 1.6; /* Adjust line height for better readability */
 }
 
 .about-text p {
     color: aliceblue;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 20px; /* Slightly larger text for better readability */
+    line-height: 1.7; /* Increased line height for comfort */
     margin-bottom: 30px;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.about .btn-box {
-    display: inline-block;
-    background-color: #0ef;
-    color: #222;
-    padding: 12px 25px;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s ease-in-out;
-    margin-top: 20px;
-}
-
-.about .btn-box:hover {
-    background-color: #0056b3;
-    transform: scale(1.05); /* Slight scaling effect on hover */
-}
-
-@media screen and (max-width: 768px) {
-    .about-text h2 {
-        font-size: 28px;
-    }
-
-    .about-text h4 {
-        font-size: 20px;
-    }
-
-    .about-text p, .about-text ul li {
-        font-size: 16px;
-    }
-
-    .about-text ul {
-        padding-left: 20px;
-    }
-}
 
 
 /* Education Section */
