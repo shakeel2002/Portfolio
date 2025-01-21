@@ -178,44 +178,101 @@ section {
     0 0 25px cyan,
     0 0 50px cyan,
     0 0 100px cyan;
-    
 }
+    
+/* About Section with Flexbox Layout */
 .about {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222; /* Dark background for contrast */
 }
 
 .about-text {
-    max-width: 800px; 
-    padding: 0 20px; 
+    max-width: 800px;
+    padding: 0 20px;
 }
 
 .about-text h2 {
     font-size: 36px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    color: #fff; /* Light color for the heading */
 }
 
 .about-text h2 span {
-    color: #0ef;
+    color: #0ef; /* Bright color for the span text */
 }
 
 .about-text h4 {
     font-size: 24px;
     font-weight: 600;
     color: #fff;
-    margin: 15px 0; 
+    margin: 15px 0;
     line-height: 1.7;
 }
 
 .about-text p {
     color: aliceblue;
-    font-size: 18px; 
-    line-height: 1.5; 
+    font-size: 18px;
+    line-height: 1.5;
     margin-bottom: 30px;
 }
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+    color: aliceblue;
+}
+
+.about-text ul li {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.about-text ul li strong {
+    font-weight: bold;
+    color: #0ef;
+}
+
+.about .btn-box {
+    display: inline-block;
+    background-color: #0ef;
+    color: #222;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.about .btn-box:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text h4 {
+        font-size: 20px;
+    }
+
+    .about-text p, .about-text ul li {
+        font-size: 16px;
+    }
+
+    .about-text ul {
+        padding-left: 20px;
+    }
+}
+
 
 /* Education Section */
 .education {
