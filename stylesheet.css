@@ -188,7 +188,6 @@ section {
     flex-direction: column;
     text-align: center;
     padding: 50px 20px;
-    background-color: #222; /* Dark background for contrast */
     border-radius: 12px; /* Slight rounding of the container */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
 }
